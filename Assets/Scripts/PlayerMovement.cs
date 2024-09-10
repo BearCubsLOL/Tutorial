@@ -30,5 +30,9 @@ public class NewBehaviourScript : MonoBehaviour
         {
             rb.AddForce(-sidewaysForce * Time.deltaTime, 0, 0);
         }
+        if (Input.GetKey("space"))
+        {
+            rb.AddForce(0, sidewaysForce * Time.deltaTime, 0);
+        }
     }
 }
