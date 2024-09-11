@@ -1,9 +1,6 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour
+public class PlayerMovement : MonoBehaviour
 {
 
     public Rigidbody rb;
@@ -29,10 +26,6 @@ public class NewBehaviourScript : MonoBehaviour
         if (Input.GetKey("a"))
         {
             rb.AddForce(-sidewaysForce * Time.deltaTime, 0, 0);
-        }
-        if (Input.GetKey("space"))
-        {
-            rb.AddForce(0, sidewaysForce * Time.deltaTime, 0);
         }
     }
 }
